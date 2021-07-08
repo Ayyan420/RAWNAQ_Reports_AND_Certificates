@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Monthly Sheet</title>
+    <style>
+    .custom_main {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: black;
+        overflow-x: hidden;
+    }
+
+    .custom_container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .main_custom_table {
+        width: 100%;
+    }
+
+    .main_custom_table table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .main_custom_table table thead tr th,
+    .main_custom_table table tbody tr td,
+    .main_custom_table table tfoot tr td {
+        border: 1px solid black;
+    }
+
+    .main_custom_table table tbody tr td,
+    .main_custom_table table tfoot tr td {
+        text-align: center;
+        word-break: break-all;
+        font-weight: lighter;
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    .main_custom_table table thead tr:first-child th {
+        font-weight: bold !important;
+    }
+
+    .main_custom_table table thead tr:first-child th {
+        width: 16%;
+        word-break: break-word;
+        text-align: left;
+        font-weight: lighter;
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+    .main_custom_table table thead tr:nth-child(2) th {
+        text-align: left;
+        font-weight: bold;
+        padding: 15px 5px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(3),
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(4),
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(5),
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(6),
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(7),
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(8),
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(9),
+    .main_custom_table table thead tr:nth-child(2) th:nth-child(10) {
+        width: 13%;
+        text-align: center;
+    }
+
+    .main_custom_table table tfoot tr td:first-child {
+        text-align: left !important;
+        word-break: break-all;
+        font-weight: bold;
+        padding: 15px 5px;
+        font-size: 17px;
+    }
+
+    @media print {
+        thead {
+            display: table-header-group;
+        }
+    }
+
+    tr {
+        page-break-inside: avoid !important;
+    }
+
+    td {
+        page-break-inside: avoid !important;
+    }
+
+    td {
+        page-break-after: always;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="custom_main">
+        <div class="custom_container">
+            <div class="main_custom_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><span>Project</span></th>
+                            <th><span>-</span></th>
+                        </tr>
+                        <tr>
+                            <th><span>Sr. No.</span></th>
+                            <th><span>Project</span></th>
+                            <th><span>Unit</span></th>
+                            <th><span>Previous Reading</span></th>
+                            <th><span>This Month Reading</span></th>
+                            <th><span>Differecne</span></th>
+                            <th><span>Rate</span></th>
+                            <th><span>Total Electricity</span></th>
+                            <th><span>Maintenance</span></th>
+                            <th><span>Total Reveune</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><span>Total </span></td>
+                            <td><span></span></td>
+                            <td><span></span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                            <td><span> - </span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bills Formate</title>
+    <style>
+    .custom_main_bills {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: black;
+        overflow-x: hidden;
+    }
+
+    .custom_container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .main_custom_table_bills {
+        width: 100%;
+    }
+
+    .main_custom_table_bills table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .main_custom_table_bills header {
+        color: black;
+        width: 100%;
+    }
+
+    .main_custom_table_bills header p:nth-child(2) {
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px !important;
+    }
+
+    .main_custom_table_bills header p {
+        padding: 0;
+        line-height: 0.4rem;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 25px;
+    }
+
+    .sub_custom_header_one {
+        width: 100%;
+    }
+
+    .sub_custom_header_one div {
+        width: 40%;
+        text-align: left;
+        float: right;
+        font-size: 25px;
+        border: 1px solid black;
+        padding: 40px 5px 5px 5px;
+    }
+
+    .sub_custom_header_one div p {
+        margin: 0;
+    }
+
+    .sub_custom_header_two {
+        width: 100%;
+    }
+
+    .sub_custom_header_two div {
+        border: 1px solid black;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .clear_float {
+        clear: both;
+        float: none;
+    }
+
+    .sub_custom_header_two div p {
+        font-size: 15px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .bottom_boxes_custom {
+        width: 100%;
+    }
+
+    .bottom_boxes_custom div p:first-child {
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+
+    .bottom_boxes_custom div p:last-child {
+        font-size: 30px;
+        border: 1px solid black;
+        margin: 0;
+        font-weight: lighter;
+        text-align: center;
+        word-break: break-all;
+    }
+
+    .bottom_boxes_custom div {
+        margin-right: 25px;
+    }
+
+    .bottom_boxes_custom div:last-child {
+        margin-right: 0px;
+    }
+
+    .bottom_boxes_custom div:first-child,
+    .bottom_boxes_custom div:nth-child(2) {
+        float: left;
+        vertical-align: middle;
+        width: 20%;
+        text-align: center;
+    }
+
+    .bottom_boxes_custom div:nth-child(3) {
+        float: left;
+        vertical-align: middle;
+        width: 20%;
+        text-align: center;
+    }
+
+    .bottom_boxes_custom div:last-child {
+        float: right;
+        vertical-align: middle;
+        width: 30%;
+        text-align: center;
+    }
+
+    .bottom_table_main {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .bottom_table_main .left_table {
+        float: left;
+        width: 20%;
+    }
+
+    .bottom_table_main .left_table table {
+        width: 100%;
+    }
+
+    .bottom_table_main .left_table table tr td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .bottom_table_main .left_table table tr td:first-child {
+        text-align: left;
+    }
+
+    .bottom_table_main .left_table table tr td:last-child {
+        text-align: center;
+    }
+
+    .bottom_table_main .right_table_custom {
+        float: right;
+        width: 77.7%;
+    }
+
+    .left_right_table_custom {
+        float: left;
+        width: 30%;
+    }
+
+    .left_right_table_custom table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .left_right_table_custom table tr td {
+        border: 1px solid black;
+        padding: 20px 5px;
+    }
+
+    .left_right_table_custom table tr:first-child td:first-child,
+    .left_right_table_custom table tr:last-child td:first-child {
+        text-align: left;
+        font-weight: bold;
+        font-size: 12px !important;
+    }
+
+    .left_right_table_custom table tr td {
+        font-size: 14px;
+    }
+
+    .sub_right_right_table_custom {
+        float: right;
+        width: 65%;
+        text-align: center;
+    }
+
+    .header_sub_right {
+        width: 90%;
+        float: right;
+    }
+
+    .header_sub_right div:first-child {
+        border: 1px solid black;
+    }
+
+    .header_sub_right div:first-child p:first-child {
+        font-weight: bold;
+        font-size: 15px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .header_sub_right div:first-child p:last-child {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .header_sub_right div:nth-child(2) p {
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .bottom_table_sub_right {
+        width: 100%;
+        float: left;
+        margin-top: 65px;
+    }
+
+    .bottom_table_sub_right table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .bottom_table_sub_right table tr td {
+        border: 1px solid black;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .last_box_editable {
+        text-align: center;
+        padding: 30px 0;
+        widows: 100%;
+        margin-top: 20px;
+        border: 1px solid rgba(0, 0, 0, .2);
+    }
+
+    .last_box_editable p {
+        font-size: 16px;
+    }
+
+    .custom_bills_header div:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    .custom_bills_header div:first-child img {
+        max-width: 100%;
+        height: 100px;
+    }
+
+
+    @media print {
+        thead {
+            display: table-header-group;
+        }
+    }
+
+    tr {
+        page-break-inside: avoid !important;
+    }
+
+    td {
+        page-break-inside: avoid !important;
+    }
+
+    td {
+        page-break-after: always;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="custom_main_bills">
+        <div class="custom_container">
+            <div class="main_custom_table_bills">
+                <header class="custom_bills_header">
+                    <div>
+                        <img src="logo.jpg" />
+                    </div>
+                    <p><span>MMS</span></p>
+                    <p><span>Elercity & Maintenance Bill </span></p>
+                    <p><span>Billing Month</span></p>
+                    <p><span>MAY-2021</span></p>
+                </header>
+                <div class="sub_custom_header_one">
+                    <div>
+                        <p><span>Due Date</span></p>
+                    </div>
+                </div>
+                <br class="clear_float" />
+                <div class="sub_custom_header_two">
+                    <div>
+                        <p><span>Unit no( Project no and unit no)</span></p>
+                    </div>
+                </div>
+                <br class="clear_float" />
+                <div class="bottom_boxes_custom">
+                    <div>
+                        <p><span>Bill issue date</span></p>
+                        <p><span>1-6-2020</span></p>
+                    </div>
+                    <div>
+                        <p><span>Previous Reading</span></p>
+                        <p><span>666</span></p>
+                    </div>
+                    <div>
+                        <p><span>Current Reading</span></p>
+                        <p><span>1193</span></p>
+                    </div>
+                    <div>
+                        <p><span>Total units consume in this month</span></p>
+                        <p><span>527</span></p>
+                    </div>
+                </div>
+                <br class="clear_float" />
+                <div class="bottom_table_main">
+                    <div class="left_table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><span>Jan-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Feb-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Mar-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Apr-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>May-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Jun-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Jul-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Aug-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Sep-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>Oct-20</span></td>
+                                    <td><span>0</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="right_table_custom">
+                        <div class="left_right_table_custom">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><span> ( Maintenance )</span></td>
+                                        <td><span>3500</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>Current Electricity Charges</span></td>
+                                        <td><span>22134</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="sub_right_right_table_custom">
+                            <div class="header_sub_right">
+                                <div>
+                                    <p>
+                                        <span>For any querry or complain please dial</span>
+                                    </p>
+                                    <p>
+                                        <span>
+                                            0344-4867507
+                                        </span>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        <span>
+                                            Kindly please pay the bill at the date mentioned below.If you fail to do so the electricity and water connection will be cut down. There will be charges to reconnect the utilities back.
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <br class="clear_float" />
+                            <div class="bottom_table_sub_right">
+                                <table>
+                                    <tr>
+                                        <td><span>Total Payable</span></td>
+                                        <td><span>Late Payment</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>0</span></td>
+                                        <td><span>0</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br class="clear_float" />
+                <div class="last_box_editable">
+                    <p>
+                        <span>
+                            TAB FOR ANY INFORMATION WE WANT TO ENTER
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
